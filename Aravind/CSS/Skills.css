@@ -1,0 +1,111 @@
+   /* Css to Whole Page Setting */
+   * 
+   {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   /* Css to Whole Body  */
+   body 
+   {
+      padding:0px;
+      margin:0px;
+      background-color:#1f242d;
+   }
+    /* header part */
+    /* .Skill-page h2
+   {
+     font-size:40px;
+     color:#fff;
+     text-align:center;  
+   } */
+   /* Css Big Div */
+   .skills
+    {
+     padding:20px;
+     display:flex;
+     width:90%;
+     flex-wrap:wrap;  
+     margin:auto;
+     animation:Left_right 1s ease forwards;
+    }
+    /* CSS SMALL DIV */
+    .skill-category
+    {
+       width:48%;
+       margin:1%;
+     }
+   .skill-category h3
+    {
+       margin-bottom: 10px;
+       font-weight: bold;
+       color:#fff;
+       font-size:24px;
+       padding:4px;
+   }
+   .skill-category ul
+   {
+      list-style: none;
+      padding-left: 0;
+      border:1px solid #0ef;
+      border-radius:17px;
+      padding:10px 12px;
+   }
+   .skill-category li 
+   {
+      margin-bottom: 5px;
+      display: flex;
+      color:#fff;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      margin:10px; 
+   }
+   .skill-level
+    {
+      width:50%;
+      border-radius:24px;
+      padding:6px 4px;
+      text-align: center;
+      font-weight:700;
+      color:#1f242d;
+      margin-top:20px;
+      background-color:#0ef;
+      border:none;
+      box-shadow:0px 0px 10px #0ef;
+      letter-spacing:1px;
+    }
+
+
+    /* Animation code  */
+    
+
+@keyframes Left_right 
+{
+     0% 
+     {
+        transform:translateX(-100px);
+        opacity:0;
+        border:none;
+     }  
+     100% 
+     { 
+         transform:translate(0);
+         opacity:1;
+         
+     }
+}
+
+   
+    /* Responsive mode  */
+  @media screen and (max-width:786px) 
+  {  
+      .skills 
+      {
+          width:100%; 
+          margin-top:200px;
+      }
+      .skill-category 
+      {
+          width:100%;
+      }
+  }

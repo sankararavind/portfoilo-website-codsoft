@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./CSS/Home.css">
+  <link rel="stylesheet" href="./CSS/Contact.css">
+  <link rel="stylesheet" href="./CSS/project.css">
+  <link rel="stylesheet" href="./CSS/Skills.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+  <title>Home page</title>
+  <style>
+ </style>
+</head>
+<body>
+   <div id="Home" > 
+       <!-- code for nav bar -->
+           <nav class="navbar">
+           <!-- nav-brand code -->
+           <div class="logo">
+               <a href="#">Portfolio.</a>
+           </div>
+           <!-- nav link ul li  -->
+           <ul class="nav-links" id="navLinks">
+               <li><a id="active" href="#Home" style="--i:1;">Home</a></li>
+               <li><a href="about/about.html">About</a></li>
+               <li><a href="#Skill"  style="--i:2;">Skills</a></li>
+               <li><a href="#Project"  style="--i:3;">Project</a></li>
+               <li><a href="#Contact"  style="--i:4;">Contact</a></li>
+          </ul>
+          <!-- responsive button -->
+          <div class="burger" id="burger" onclick="toggleNav()">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+           </nav>
+      <!-- home content display -->
+          <div class="content">
+          <!-- wrapper div -->  
+          <section>
+          <div class="home" id="content">
+               <!-- main div -->
+              <div class="image-content">
+                  <!-- image div content -->
+                   <img src="./Image/img.jpeg" alt="error">
+              </div>
+            
+              <div class="home1">
+                   <!-- home div open -->
+                   <h3 id="home-first">Hello, It's Me</h3>
+                   <h1>Aravind</h1> 
+                   <h3 class="home12">And I' am <br class="breakline"><span class="spc-text">Full Stack Developer</span></h3>
+                   <p>🔥In the world of Full Stack Development, I'm the architect of tomorrow's digital landscapes—building bridges between user interfaces and server realms to craft immersive and transformative technologies."</p>
+                <div class="social-button"> 
+                    <!-- social media link  -->
+                   <a href="https://twitter.com/home?lang=en-in"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                   <a href="https://www.github.com/sankararavind" target="_blank"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://www.linkedin.com/in/aravind-sankar-08b87624a"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="mailto:sankararavind565@gmail.com"  target="_blank"><i class="fa-solid fa-envelope"></i></a>
+               </div>
+        
+                <!-- Download button for resume  -->
+              <div class="button-resume" id="Button">
+                 <button type="button"><span class="span-download"><i class="fa-solid fa-download"></i>  </span><a href="File/Aravind.pdf" download="File/Aravind.pdf" >Download Resume</a></button>
+              </div> 
+        </div> 
+          </div>
+          </section>
+          <section id="Skill">
+            <!-- Header part of Skills page -->
+  
+        <!-- Main part  of Project page  -->
+        <div class="skills"> 
+          <div class="Skill-page" style="margin-top:150px;">
+            <h2> My <span style="color:#0ef;">Skills</span></h2>
+            </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Programming Languages</h3>
+        <ul>
+           <li>Python<span class="skill-level">Advanced</span></li>
+           <li>C <span class="skill-level">Intermediate</span></li>
+           <li>Java <span class="skill-level">Intermediate</span></li>
+        </ul>
+        </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+        <h3>Web Development</h3>
+        <ul>
+           <li>HTML5 <span class="skill-level">Advanced</span></li>
+           <li>CSS3 <span class="skill-level">Advanced</span></li>
+           <li>JavaScript<span class="skill-level">Advanced</span></li>
+        </ul>
+       
+        </div>
+        <!-- Big Div inside small Div -->
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+             <li>Dbms<span class="skill-level">Intermediate</span></li>
+             <li>Sql<span class="skill-level">Intermediate</span></li>
+             <li>Node.js & Express.js <span class="skill-level">Intermediate</span></li>
+          </ul>
+          </div>
+        
+
+        <!-- Big Div inside small Div -->
+        
+        </div>
+          </section>
+          <section id="Contact">
+            <div class="Skill-page">
+             <h2>Contact <span style="color:#0ef;">Me !</span></h2>
+            </div>
+            <div class="form-page">
+               <form action="" onsubmit="validateForm()">
+                   <input type="text" id="name" placeholder="Full Name" required>
+                   <input type="email"  id="mail" placeholder="Email" required>
+                   <input type="text" id="phone" placeholder="Mobile Number"  required> 
+                   <input type="text"  id="subject" placeholder="Subject" required>
+                   <textarea name="textarea"  id="message" placeholder="Your Message"></textarea>
+                   <input type="submit" style="cursor: pointer;" >  
+               </form>
+            </div>
+          </section>
+          <section id="Project">
+            <!-- Header part of Project page -->
+            <div class="Skill-page">
+            <h2> My <span style="color:#0ef;">Project</span></h2>
+            </div> 
+            <!-- Main part  of Project page  -->
+            <div class="project-page">
+            <!-- Big Div inside small Div -->
+            <div class="project-cat">
+             <H3>Maya Morgan - Your Personal Voice Assistant</h3>
+            <p> Imagine a world where your laptop or PC is not just a machine but a companion, powered by Maya Morgan, a voice assistant I designed. Maya Morgan isn't just another AI; it's a game-changer. It seamlessly integrates with all your laptop apps and allows you to navigate, control, and operate your computer with natural language commands. But it doesn't stop there - Maya Morgan is your key to harnessing the power of data. This project includes the development of advanced data analysis tools, enabling you to process large datasets with ease. By creating Maya Morgan, I've showcased my proficiency in artificial intelligence, machine learning, and a commitment to making technology intuitive and accessible.
+            </p>             
+          <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            
+            </div>
+            <div  class="project-cat">
+            <H3>Front-end Login Pages</h3>
+            <p> In the digital age, a user-friendly login page is your company's first impression. I've designed sleek and intuitive front-end login pages that prioritize security without compromising the user experience. My work in this area demonstrates my eye for detail, commitment to delivering user-friendly interfaces, and my understanding of the importance of safeguarding sensitive data. These login pages aren't just gateways; they're a testament to my dedication to creating a secure and inviting online environment.</p>   
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>A Dynamic Portfolio Website </h3>
+              <p> In today's competitive job market, having a standout online presence is crucial. I've taken this to heart by creating a personal resume website that not only showcases my credentials and achievements but also reflects my passion for innovation and design. The website embodies my skills in web development, graphic design, and content creation. It's not just a website; it's a testament to my ability to craft a compelling digital narrative. These projects not only represent my technical proficiency but also my commitment to enhancing user experiences, leveraging technology for practical applications, and ensuring data security. I am excited to bring these skills and experiences to a forward-thinking company, where innovation, user-centric design, and cutting-edge technology are valued.</p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Calculator Website </h3>
+            <p>All arithmetic operations are done in this calculator website</p>   
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Simple Alarm App</h3>
+            <p>It is a simple alarm app designed for Andoid Phones we can set alarm and snooze the alarm</p>   
+            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+            <div  class="project-cat">
+            <H3>Student Management (CRUD) </h3>
+            <p>It is a web site using python and Sql</p>
+              <a href="#" target="_blank"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>     
+            </div>
+          </section>
+
+          </div>
+          </div>
+<script src="./JS/script.js"></script>
+</body>
+</html>
+

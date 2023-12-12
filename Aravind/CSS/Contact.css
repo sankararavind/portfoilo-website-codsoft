@@ -1,0 +1,124 @@
+   /* Css to Whole Page Setting
+   * 
+   {
+      box-sizing: border-box;
+      font-family:'Dongle',sans-serif;;
+   }
+   /* Css to Whole Body  */
+   body 
+   {
+      padding:0px;
+      margin:0px;
+      background-color:#1f242d;
+   } 
+   /* Css to Header part to page */
+   .Skill-page 
+   {   
+       width:65%;
+       font-size:26px;
+       margin:auto;
+       padding:10px 12px;
+       text-align:center;
+       color:#fff;
+   }  
+   /* Form page div */
+   .form-page 
+   { 
+    width:700px;
+    padding:10px 12px;
+    margin:auto; 
+    text-align:center;
+   }
+
+   /* css input div */
+   input[type='text'],
+   input[type='email'],
+   input[type='number']
+   {
+        padding:14px 9px;
+        border:none;
+        width:300px;
+        border-radius:9px;
+        color:black;
+        font-weight:800px;
+        margin:10px 13px;
+        background-color: rgba(255, 255, 255, 0.8);
+   }
+   input 
+   {
+       font-size:12px; 
+       font-weight: 700;
+   }
+   /* input :placeholder-shown */
+   input::placeholder
+   {
+      padding:4px;
+      margin-left:10px;
+      font-weight: 700;
+   }
+   input[type='text'],
+   input[type='email'],
+   textarea,
+   input[type='number']:focus 
+   {
+       outline:none;
+   }
+    /* code for submit button */
+    input[type='submit']
+   {
+    font-size:20px;
+    padding:10px 30px 10px;
+    border-radius:24px;
+    color:#1f242d;
+    margin-top:20px;
+    width:200px;
+    background-color:#0ef;
+    border:none;
+    box-shadow:0px 0px 10px #0ef;
+    letter-spacing:1px;
+   }
+   /* code for textarea */
+   textarea 
+   {
+      width:93%;
+      border-radius:10px;
+      height:160px;
+      margin-top:10px;
+      padding:5px;
+      font-size:12px; 
+      font-weight: 700;;
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+
+   textarea::placeholder
+   {
+      padding:4px;
+      margin-left:10px;
+      font-weight: 700;
+   }   
+   /* Responsive code */
+  @media screen and (max-width:786px) 
+  {
+       .form-page 
+       {
+          width:350px;
+          padding:0px;
+          margin:0px;
+       }
+       
+       input[type='text'],
+       input[type='email'],
+       input[type='phone']
+      {
+       padding:11px;
+      }
+      textarea 
+       {
+           width:82%;
+       }
+       .Skill-page
+       {
+          width:100%;
+       }
+
+  }
